@@ -18,7 +18,7 @@ Parameters:
 
   MaxCount:
     Description: Maximum number of instances of this task we can run across our cluster
-    Type: Number
+    Type: Number 
     Default: 3
 
   ProductServiceUrl:
@@ -36,7 +36,7 @@ Parameters:
 
   ECSServiceAutoScalingRoleARN:
     Description: The ECS service auto scaling role ARN
-    Type: String
+    Type: String 
 
 Resources:
   Service:
@@ -49,7 +49,7 @@ Resources:
       TaskDefinition: !Ref TaskDefinition
       LoadBalancers:
         - ContainerName: "website-service"
-          ContainerPort: 8000
+          ContainerPort: 8000 
           TargetGroupArn: !Ref TargetGroup
 
   TaskDefinition:
@@ -96,7 +96,7 @@ Resources:
     Type: AWS::ElasticLoadBalancingV2::ListenerRule
     Properties:
       ListenerArn: !Ref Listener
-      Priority: 1
+      Priority: 2
       Conditions:
         - Field: path-pattern
           Values:
