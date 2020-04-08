@@ -1,13 +1,13 @@
-package main
-
-import "github.com/gin-gonic/gin"
+package main  
+ 
+import "github.com/gin-gonic/gin"   
 
 type product struct {
 	ID          string
 	Title       string
 	Description string
-	Price       float64
-}
+	Price       float64  
+}  
 
 func main() {
 
@@ -39,9 +39,9 @@ func main() {
 
 		c.IndentedJSON(200, products)
 
-	})
+	}) 
 
-	// Serve all of the things..
+	// Serve all of the things..test
 	router.Run(":8001")
 
 }

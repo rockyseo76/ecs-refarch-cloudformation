@@ -1,7 +1,7 @@
 all: run
 
 # This makefile contains some convenience commands for deploying and publishing.
-#test001
+# test002
 # For example, to build and run the docker container locally, just run:
 # $ make
 

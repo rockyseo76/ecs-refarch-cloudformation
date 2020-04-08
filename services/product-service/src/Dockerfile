@@ -1,4 +1,4 @@
-# Start from a small base - test1
+# Start from a small base - test2
 FROM scratch
 
 # Our application requires no privileges
