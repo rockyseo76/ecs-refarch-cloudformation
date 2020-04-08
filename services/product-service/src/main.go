@@ -13,7 +13,7 @@ func main() {
 
 	router := gin.Default()
 
-	// Respond to GET requests
+	// Respond to GET requestssssssssdsdsdsdsds- test1
 	router.GET("/products", func(c *gin.Context) {
 
 		products := []product{
