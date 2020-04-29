@@ -7,9 +7,9 @@ Parameters:
     Description: The VPC that the ECS cluster is deployed to
     Type: AWS::EC2::VPC::Id
 
-  Cluster:
+  Cluster:    
     Description: Please provide the ECS Cluster ID that this service should run on
-    Type: String
+    Type: String   
 
   DesiredCount:
     Description: How many instances of this task should we run across our cluster?

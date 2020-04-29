@@ -1,9 +1,9 @@
-#!/bin/bash
-ERROR_COUNT=0; 
+#!/bin/bash 
+ERROR_COUNT=0;  
 
-echo "Validating AWS CloudFormation templates..."
+echo "Validating AWS CloudFormation templates..." 
 
-# Loop through the YAML templates in this repository
+# Loop through the YAML templates in this repository 
 for TEMPLATE in $(find . -name '*.yaml'); do 
 
     # Validate the template with CloudFormation
